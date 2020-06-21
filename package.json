@@ -1,0 +1,29 @@
+{
+  "name": "parser_application",
+  "version": "1.0.0",
+  "description": "Parser application",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "debug": "nodemon --inspect index.js",
+    "deploy": "NODE_ENV=production pm2 start index.js --name parser",
+    "stop": "pm2 stop pizza",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parser",
+    "node.js"
+  ],
+  "author": "Slava-Nik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.19.2",
+    "config": "^3.3.1",
+    "node-html-parser": "^1.2.19"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
